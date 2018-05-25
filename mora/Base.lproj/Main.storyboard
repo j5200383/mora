@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mora View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="moraViewController" customModule="mora" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="皮卡丘" translatesAutoresizingMaskIntoConstraints="NO" id="1f7-c9-woa">
+                                <rect key="frame" x="67" y="220" width="240" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="石頭" translatesAutoresizingMaskIntoConstraints="NO" id="JqX-S1-xPr">
+                                <rect key="frame" x="146" y="567" width="82" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3iO-ed-8ZA" appends="YES" id="xEc-n9-n1F"/>
+                                    <outletCollection property="gestureRecognizers" destination="2j9-4G-cIT" appends="YES" id="miO-gk-H5s"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="剪刀" translatesAutoresizingMaskIntoConstraints="NO" id="5mP-lw-Tvr">
+                                <rect key="frame" x="30" y="668" width="82" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dU4-oq-Xmd" appends="YES" id="yab-Mh-u1M"/>
+                                    <outletCollection property="gestureRecognizers" destination="52W-zf-4mz" appends="YES" id="z7o-ju-Gft"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="布" translatesAutoresizingMaskIntoConstraints="NO" id="FFW-Xz-Hqc">
+                                <rect key="frame" x="263" y="668" width="82" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="5yr-WD-vwj" appends="YES" id="s1H-lp-AYg"/>
+                                    <outletCollection property="gestureRecognizers" destination="3ss-nq-qJ7" appends="YES" id="uZ9-iE-IJb"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="黑白配" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6N-V9-Rcd">
+                                <rect key="frame" x="30" y="492" width="329" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="down" translatesAutoresizingMaskIntoConstraints="NO" id="XQs-zc-Qbh" userLabel="downImage">
+                                <rect key="frame" x="146" y="668" width="82" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Xco-Ei-WuX" appends="YES" id="RMm-Im-UDo"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="男生女生配" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAU-dH-2xx">
+                                <rect key="frame" x="96" y="63" width="182" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5D-Yk-A7N">
+                                <rect key="frame" x="58" y="159" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="下一局"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vb3-QV-p2f"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Peter得分：100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfM-8V-vL4">
+                                <rect key="frame" x="30" y="130" width="121" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="皮卡丘得分：100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjZ-Cr-Pz5">
+                                <rect key="frame" x="226" y="130" width="133" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bet-ay-G6Q">
+                                <rect key="frame" x="261" y="159" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="重新開始"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Fk-Fz-MAu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="downGesture" destination="Xco-Ei-WuX" id="219-UY-xS6"/>
+                        <outlet property="downImage" destination="XQs-zc-Qbh" id="hoK-ro-lI3"/>
+                        <outlet property="leftGesture" destination="52W-zf-4mz" id="SA5-QF-T77"/>
+                        <outlet property="paperGestrue" destination="5yr-WD-vwj" id="hJa-df-KiD"/>
+                        <outlet property="paperImage" destination="FFW-Xz-Hqc" id="EeR-Gk-eGc"/>
+                        <outlet property="peterLabel" destination="OfM-8V-vL4" id="zFO-2M-Cho"/>
+                        <outlet property="pikachuImage" destination="1f7-c9-woa" id="wUB-at-dpE"/>
+                        <outlet property="pikachuLabel" destination="EjZ-Cr-Pz5" id="CST-6h-lMF"/>
+                        <outlet property="renewButton" destination="bet-ay-G6Q" id="a1l-rt-RAo"/>
+                        <outlet property="rightGesture" destination="3ss-nq-qJ7" id="2P0-Zc-tK2"/>
+                        <outlet property="scissorsGestrue" destination="dU4-oq-Xmd" id="mI0-j1-cGP"/>
+                        <outlet property="scissorsImage" destination="5mP-lw-Tvr" id="oSd-c4-GQR"/>
+                        <outlet property="stoneGesture" destination="3iO-ed-8ZA" id="yN4-tQ-a7d"/>
+                        <outlet property="stoneImage" destination="JqX-S1-xPr" id="VCt-2N-P5A"/>
+                        <outlet property="textLabel" destination="Q6N-V9-Rcd" id="wF6-k2-iJ2"/>
+                        <outlet property="titleLabel" destination="uAU-dH-2xx" id="h0W-zW-azs"/>
+                        <outlet property="upGesture" destination="2j9-4G-cIT" id="q23-4o-Lcn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="3iO-ed-8ZA" userLabel="stoneGesture">
+                    <connections>
+                        <action selector="moraGesture:" destination="BYZ-38-t0r" id="twL-Zr-nYq"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="5yr-WD-vwj" userLabel="paperGestrue">
+                    <connections>
+                        <action selector="moraGesture:" destination="BYZ-38-t0r" id="Fie-zO-47O"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="dU4-oq-Xmd" userLabel="scissorsGestrue">
+                    <connections>
+                        <action selector="moraGesture:" destination="BYZ-38-t0r" id="cgo-CZ-Zia"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="2j9-4G-cIT" userLabel="upGesture">
+                    <connections>
+                        <action selector="directionGesture:" destination="BYZ-38-t0r" id="JeF-KN-h08"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="3ss-nq-qJ7" userLabel="rightGesture">
+                    <connections>
+                        <action selector="directionGesture:" destination="BYZ-38-t0r" id="bze-4A-KOd"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="52W-zf-4mz" userLabel="leftGesture">
+                    <connections>
+                        <action selector="directionGesture:" destination="BYZ-38-t0r" id="3IG-tI-9Vu"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Xco-Ei-WuX" userLabel="downGesture">
+                    <connections>
+                        <action selector="directionGesture:" destination="BYZ-38-t0r" id="G32-4s-HhY"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="35.467980295566505"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="down" width="256" height="256"/>
+        <image name="剪刀" width="642" height="562"/>
+        <image name="布" width="482" height="502"/>
+        <image name="皮卡丘" width="1074" height="1058"/>
+        <image name="石頭" width="716" height="600"/>
+    </resources>
+</document>
